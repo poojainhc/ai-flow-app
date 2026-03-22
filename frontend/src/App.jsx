@@ -53,7 +53,7 @@ const gap = 250; // distance between nodes
 
 
   const runFlow = async () => {
-    const res = await axios.post("http://localhost:4000/api/ask-ai", {
+    const res = await axios.post("https://ai-flow-app-jg0n.onrender/api/ask-ai", {
       prompt: input
     });
 
@@ -61,7 +61,7 @@ const gap = 250; // distance between nodes
      setLoading(false);
   };
   const saveData = async () => {
-  await axios.post("http://localhost:4000/api/save", {
+  await axios.post("https://ai-flow-app-jg0n.onrender/api/save", {
     prompt: input,
     response: output
   });
