@@ -56,7 +56,7 @@ ai-flow-app/
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone https://github.com/your-username/ai-flow-app.git
+git clone https://github.com/poojainhc/ai-flow-app
 cd ai-flow-app
 ```
 
@@ -74,7 +74,7 @@ Create `.env` file:
 ```
 MONGO_URI=mongodb+srv://poojakhawle:Pooja%40123@cluster0.jth7oa7.mongodb.net/aiflow
 
-OPENROUTER_API_KEY=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
+OPENROUTER_API_KEY=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
 ```
 
 Run backend:
