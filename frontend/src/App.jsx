@@ -8,11 +8,12 @@ function App() {
   const [input, setInput] = useState("");
   const [output, setOutput] = useState("");
   const [loading, setLoading] = useState(false);
+  const API = "https://ai-flow-app-jg0n.onrender.com";
   
- const centerX = 400;
+ const centerX = 400; // middle of container
  const centerY = 200;
 
-const gap = 250; 
+const gap = 250; // distance between nodes
 
   const nodes = [
     {
@@ -53,7 +54,7 @@ const gap = 250;
 
 
   const runFlow = async () => {
-    const res = await axios.post("https://ai-flow-app-jg0n.onrender.com/api/ask-ai", {
+    const res = await axios.post(`${API}/api/ask-ai`, {
       prompt: input
     });
 
@@ -61,7 +62,7 @@ const gap = 250;
      setLoading(false);
   };
   const saveData = async () => {
-  await axios.post("https://ai-flow-app-jg0n.onrender.com/api/save", {
+  await axios.post(`${API}/api/save`, {
     prompt: input,
     response: output
   });
