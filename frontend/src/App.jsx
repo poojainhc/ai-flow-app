@@ -9,10 +9,10 @@ function App() {
   const [output, setOutput] = useState("");
   const [loading, setLoading] = useState(false);
   
- const centerX = 400; // middle of container
+ const centerX = 400;
  const centerY = 200;
 
-const gap = 250; // distance between nodes
+const gap = 250; 
 
   const nodes = [
     {

@@ -10,6 +10,8 @@ mongoose.connect(process.env.MONGO_URI)
 .then(() => console.log("MongoDB connected"))
 .catch(err => console.log(err));
 
+console.log("API KEY:", process.env.OPENROUTER_API_KEY);
+
 const app = express();
 const port = 4000;
 
